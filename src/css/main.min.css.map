@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,4FAAI;AAEZ,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CACvB;;AAED,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,wBAAwB;CACtC",
+    "sources": [
+        "../../scss/main.scss",
+        "../../scss/_sets.scss"
+    ],
+    "names": [],
+    "file": "main.min.css"
+}
