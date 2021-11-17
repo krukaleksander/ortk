@@ -10,6 +10,9 @@ export const Video = () => {
         </video>
       </div>
       <div className="video__color"></div>
+      <h1 className="video__title">
+        Sprzedawca co chwila podnosi Ci cenę? To nie musi tak wyglądać!
+      </h1>
     </div>
   );
 };

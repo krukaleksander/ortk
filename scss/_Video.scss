@@ -41,4 +41,13 @@
     -o-object-fit: cover;
     object-fit: cover;
   }
+  &__title {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    font-size: 60px;
+    color: whitesmoke;
+  }
 }
