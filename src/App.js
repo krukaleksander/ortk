@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import { Video } from "./components/Video";
 import Services from "./components/Services";
 import Whyus from "./components/Whyus";
+import Whychange from "./components/Whychange";
 const App = () => {
   return (
     <div className="App">
@@ -9,6 +10,7 @@ const App = () => {
       <Video />
       <Services />
       <Whyus />
+      <Whychange />
     </div>
   );
 };
