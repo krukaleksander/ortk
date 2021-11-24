@@ -286,10 +286,28 @@ header img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 70%;
 }
 
 .why-change__benefit {
   -ms-flex-preferred-size: 33%;
       flex-basis: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+}
+
+.why-change__benefit span {
+  font-size: 50px;
+}
+
+.why-change__benefit p {
+  font-size: 25px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 /*# sourceMappingURL=main.min.css.map */

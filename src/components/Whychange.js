@@ -20,24 +20,21 @@ const Whychange = () => {
             </span>
             <p className="why-change__text">Obniż stawkę za megawat</p>
           </div>
-        </div>
-        <div className="why-change__container">
+
           <div className="why-change__benefit">
             <span className="why-change__icon">
               <GiTakeMyMoney />
             </span>
             <p className="why-change__text">Obniż stawkę opłaty handlowej</p>
           </div>
-        </div>
-        <div className="why-change__container">
+
           <div className="why-change__benefit">
             <span className="why-change__icon">
               <GiGreenPower />
             </span>
             <p className="why-change__text">Postaw na zieloną energię</p>
           </div>
-        </div>
-        <div className="why-change__container">
+
           <div className="why-change__benefit">
             <span className="why-change__icon">
               <GiExtraTime />
@@ -46,8 +43,7 @@ const Whychange = () => {
               Gwarancja stałej ceny na długi okres
             </p>
           </div>
-        </div>
-        <div className="why-change__container">
+
           <div className="why-change__benefit">
             <span className="why-change__icon">
               <MdTimeline />
