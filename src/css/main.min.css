@@ -95,6 +95,7 @@ header img {
 }
 
 .services__circle {
+  z-index: 2;
   cursor: pointer;
   width: 240px;
   height: 240px;
@@ -135,5 +136,29 @@ header img {
   background-image: linear-gradient(145deg, #0dacae, #00e6b8);
   -webkit-box-shadow: 0 0 60px 30px rgba(0, 229, 184, 0.3);
           box-shadow: 0 0 60px 30px rgba(0, 229, 184, 0.3);
+}
+
+.services__colored {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  opacity: 0.9;
+  display: none;
+}
+
+.services__colored--energy {
+  background: url("../media/gradient-power.jpeg");
+}
+
+.services__colored--gas {
+  background: url("../media/gradient-gas.jpeg");
+}
+
+.services__colored--plus {
+  background: url("../media/plus.png");
+  background-repeat: repeat;
+  opacity: 0.2;
 }
 /*# sourceMappingURL=main.min.css.map */
