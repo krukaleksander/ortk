@@ -1,0 +1,26 @@
+.why-change {
+  min-height: 500px;
+  background: linear-gradient(90deg, #2c41a1, #272f84);
+  color: whitesmoke;
+  padding: 120px 0;
+  &__wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: 100;
+    padding: 10px;
+  }
+  &__container {
+    display: flex;
+  }
+  &__benefit {
+    flex-basis: 33%;
+  }
+}

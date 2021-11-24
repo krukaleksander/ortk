@@ -256,4 +256,40 @@ header img {
   font-weight: 400;
   padding-top: 20px;
 }
+
+.why-change {
+  min-height: 500px;
+  background: -webkit-gradient(linear, left top, right top, from(#2c41a1), to(#272f84));
+  background: linear-gradient(90deg, #2c41a1, #272f84);
+  color: whitesmoke;
+  padding: 120px 0;
+}
+
+.why-change__wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.why-change h1 {
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.why-change h2 {
+  font-size: 20px;
+  font-weight: 100;
+  padding: 10px;
+}
+
+.why-change__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.why-change__benefit {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+}
 /*# sourceMappingURL=main.min.css.map */
