@@ -1,4 +1,5 @@
 import { BsArrowRight } from "react-icons/bs";
+import ContactForm from "./ContactForm";
 
 const ContactSection = () => {
   return (
@@ -20,6 +21,7 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
+      <ContactForm />
     </div>
   );
 };
