@@ -445,4 +445,108 @@ header img {
   letter-spacing: 2px;
   line-height: 1.5;
 }
+
+.contact {
+  min-height: 400px;
+  background: -webkit-gradient(linear, left top, right top, from(#2c41a1), to(#272f84));
+  background: linear-gradient(90deg, #2c41a1, #272f84);
+  color: whitesmoke;
+  padding: 100px 0px;
+}
+
+.contact__wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.contact__wrapper h3 {
+  letter-spacing: 2px;
+  position: relative;
+  padding-left: 4rem;
+}
+
+.contact__wrapper h3::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  width: 3.125rem;
+  border-top: 1px solid #0dacae;
+}
+
+.contact__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact__container h1 {
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
+
+.contact__container button {
+  position: relative;
+  color: #0c0c26;
+  font-weight: 600;
+  border-color: #fff;
+  background-color: #fff;
+  border-radius: 1.5625rem;
+  padding: 15px 50px;
+  cursor: pointer;
+  position: relative;
+}
+
+.contact__container button span {
+  display: block;
+  position: absolute;
+  right: 100%;
+  top: 55%;
+  font-size: 30px;
+  -webkit-transform: translate(-4.1875rem, -50%);
+          transform: translate(-4.1875rem, -50%);
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  transition: -webkit-transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  transition: transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  transition: transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28), -webkit-transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  pointer-events: none;
+  color: white;
+}
+
+.contact__container button:hover span {
+  right: 70%;
+  color: #0c0c26c4;
+}
+
+.contact__container button::before {
+  content: "";
+  position: absolute;
+  top: 55%;
+  left: 52%;
+  width: 29.25rem;
+  height: 15.5rem;
+  background-image: url("../media/plus.png");
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+.contact__btn-container {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=main.min.css.map */

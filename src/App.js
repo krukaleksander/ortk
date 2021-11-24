@@ -4,6 +4,7 @@ import Services from "./components/Services";
 import Whyus from "./components/Whyus";
 import Whychange from "./components/Whychange";
 import Faq from "./components/Faq";
+import ContactSection from "./components/ContactSection";
 const App = () => {
   return (
     <div className="App">
@@ -13,6 +14,7 @@ const App = () => {
       <Whyus />
       <Whychange />
       <Faq />
+      <ContactSection />
     </div>
   );
 };
