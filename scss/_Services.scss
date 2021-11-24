@@ -1,5 +1,5 @@
 .services {
-  min-height: 100vh;
+  height: 600px;
   background: url("../media/bg-services.jpeg");
   padding-top: 10px;
   display: flex;
@@ -46,6 +46,7 @@
     right: 0px;
     opacity: 0.9;
     display: none;
+    z-index: 1;
     &--energy {
       background: url("../media/gradient-power.jpeg");
     }
@@ -56,6 +57,11 @@
       background: url("../media/plus.png");
       background-repeat: repeat;
       opacity: 0.2;
+    }
+    &--image {
+      display: block;
+      transform: scale(1.5);
+      transition: all 0.4s cubic-bezier(0.4, 0, 1, 1);
     }
   }
 }

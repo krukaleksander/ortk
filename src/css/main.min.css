@@ -79,7 +79,7 @@ header img {
 }
 
 .services {
-  min-height: 100vh;
+  height: 600px;
   background: url("../media/bg-services.jpeg");
   padding-top: 10px;
   display: -webkit-box;
@@ -147,6 +147,7 @@ header img {
   right: 0px;
   opacity: 0.9;
   display: none;
+  z-index: 1;
 }
 
 .services__colored--energy {
@@ -161,5 +162,13 @@ header img {
   background: url("../media/plus.png");
   background-repeat: repeat;
   opacity: 0.2;
+}
+
+.services__colored--image {
+  display: block;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 1, 1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 1, 1);
 }
 /*# sourceMappingURL=main.min.css.map */

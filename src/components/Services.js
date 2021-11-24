@@ -6,22 +6,18 @@ import BasicBg from "../media/bg-services.jpeg";
 
 const Services = () => {
   const changeBg = (medium = "power") => {
-    const container = document.querySelector(".services");
+    const container = document.querySelector(".services__colored--image");
     const powerColored = document.querySelector(".services__colored--energy");
     const gasColored = document.querySelector(".services__colored--gas");
     const plusColored = document.querySelector(".services__colored--plus");
 
     if (medium === "power") {
-      container.style.background = `url(${PowerImage})`;
-      container.style.backgroundSize = "cover";
-      container.style.backgroundRepeat = "no-repeat";
+      container.style.cssText = `background:url(${PowerImage});background-repeat:no-repeat;background-size:cover;display:block;transition: all .4s cubic-bezier(.4,0,1,1);transform:scale(1.1)`;
       powerColored.style.display = "block";
       plusColored.style.display = "block";
     }
     if (medium === "gas") {
-      container.style.background = `url(${GasImage})`;
-      container.style.backgroundSize = "cover";
-      container.style.backgroundRepeat = "no-repeat";
+      container.style.cssText = `background:url(${GasImage});background-repeat:no-repeat;background-size:cover;display:block;transition: all .4s cubic-bezier(.4,0,1,1);transform:scale(1.1)`;
       gasColored.style.display = "block";
       plusColored.style.display = "block";
     }
@@ -29,12 +25,16 @@ const Services = () => {
 
   const returnBg = () => {
     document.querySelector(".services").style.background = `url(${BasicBg})`;
+    document.querySelector(
+      ".services__colored--image"
+    ).style.cssText = `background:unset;transform:scale(1.5)`;
     document.querySelector(".services__colored--energy").style.display = "none";
     document.querySelector(".services__colored--gas").style.display = "none";
     document.querySelector(".services__colored--plus").style.display = "none";
   };
   return (
     <div className="services">
+      <div className="services__colored services__colored--image"></div>
       <div className="services__colored services__colored--energy"></div>
       <div className="services__colored services__colored--gas"></div>
       <div className="services__colored services__colored--plus"></div>
