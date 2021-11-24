@@ -3,6 +3,7 @@ import { Video } from "./components/Video";
 import Services from "./components/Services";
 import Whyus from "./components/Whyus";
 import Whychange from "./components/Whychange";
+import Faq from "./components/Faq";
 const App = () => {
   return (
     <div className="App">
@@ -11,6 +12,7 @@ const App = () => {
       <Services />
       <Whyus />
       <Whychange />
+      <Faq />
     </div>
   );
 };
