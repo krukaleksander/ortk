@@ -92,6 +92,7 @@ header img {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  overflow: hidden;
 }
 
 .services__circle {
