@@ -8,9 +8,9 @@ import Energia from "./components/Energia";
 import Gaz from "./components/Gaz";
 import About from "./components/About";
 import ContactPage from "./components/ContactPage";
-
 import ContactSection from "./components/ContactSection";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BsFillTelephoneFill } from "react-icons/bs";
 
 const App = () => {
   const Home = () => {
@@ -28,25 +28,35 @@ const App = () => {
   return (
     <div className="App">
       <Router>
-        <Header />
         <div>
-          <ul>
-            <li>
-              <Link to="/">Strona główna</Link>
-            </li>
-            <li>
-              <Link to="/energia">Energia Elektryczna</Link>
-            </li>
-            <li>
-              <Link to="/gaz">Gaz</Link>
-            </li>
-            <li>
-              <Link to="/onas">O nas</Link>
-            </li>
-            <li>
-              <Link to="/kontakt">Kontakt</Link>
-            </li>
-          </ul>
+          <div className="header-wrapper">
+            <Header />
+            <div className="navigation-wrapper">
+              <div className="phone">
+                <span>
+                  <BsFillTelephoneFill />
+                </span>
+                605 271 432
+              </div>
+              <ul className="navigation">
+                <li>
+                  <Link to="/">Strona główna</Link>
+                </li>
+                <li>
+                  <Link to="/energia">Energia Elektryczna</Link>
+                </li>
+                <li>
+                  <Link to="/gaz">Gaz</Link>
+                </li>
+                <li>
+                  <Link to="/onas">O nas</Link>
+                </li>
+                <li>
+                  <Link to="/kontakt">Kontakt</Link>
+                </li>
+              </ul>
+            </div>
+          </div>
 
           <Routes>
             <Route exact path="/" element={<Home />} />
