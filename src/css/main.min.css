@@ -596,14 +596,19 @@ header img {
   color: white;
 }
 
+.contact-form form h2 {
+  text-align: center;
+  padding: 10px;
+}
+
 .contact-form form input {
-  color: #747580;
+  color: #414147;
   -webkit-box-shadow: none;
           box-shadow: none;
   border: 0.0625rem solid #d9dde1;
   background-color: #fff;
   display: block;
-  font-size: 0.77778em;
+  font-size: 20px;
   font-weight: 400;
   padding: 0.625rem 2rem;
   line-height: 1.5;
@@ -615,5 +620,81 @@ header img {
   outline: none;
   border-radius: 0.3125rem;
   margin-top: 10px;
+}
+
+.contact-form form textarea {
+  color: #414147;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0.0625rem solid #d9dde1;
+  background-color: #fff;
+  display: block;
+  font-size: 20px;
+  font-family: Geometria, sans-serif;
+  font-weight: 400;
+  padding: 0.625rem 2rem;
+  line-height: 1.5;
+  -webkit-transition: border 0.2s ease;
+  transition: border 0.2s ease;
+  width: 100%;
+  min-height: 3.25rem;
+  letter-spacing: 0.14px;
+  outline: none;
+  margin: 10px 0;
+  border-radius: 0.3125rem;
+}
+
+.contact-form form button {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 3.125rem;
+  padding: 0.55556em 1.66667em;
+  vertical-align: middle;
+  border-radius: 1.5625rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1;
+  color: #414147;
+  text-decoration: none;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #0dacae;
+  border-top-color: #0dacae;
+  border-right-color: #0dacae;
+  border-bottom-color: #0dacae;
+  border-left-color: #0dacae;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  cursor: pointer;
+  margin: 10px 0;
+  -webkit-transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.contact-form form button:hover {
+  background-color: #0dacae;
+  color: #fff;
+}
+
+.contact-form form p {
+  max-width: 90%;
+  margin: 10px auto;
+  font-size: 15px;
+  text-align: center;
 }
 /*# sourceMappingURL=main.min.css.map */

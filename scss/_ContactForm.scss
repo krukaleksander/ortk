@@ -27,13 +27,17 @@
         color: white;
       }
     }
+    h2 {
+      text-align: center;
+      padding: 10px;
+    }
     input {
-      color: #747580;
+      color: #414147;
       box-shadow: none;
       border: 0.0625rem solid #d9dde1;
       background-color: #fff;
       display: block;
-      font-size: 0.77778em;
+      font-size: 20px;
       font-weight: 400;
       padding: 0.625rem 2rem;
       line-height: 1.5;
@@ -44,6 +48,67 @@
       outline: none;
       border-radius: 0.3125rem;
       margin-top: 10px;
+    }
+    textarea {
+      color: #414147;
+      box-shadow: none;
+      border: 0.0625rem solid #d9dde1;
+      background-color: #fff;
+      display: block;
+      font-size: 20px;
+      font-family: Geometria, sans-serif;
+      font-weight: 400;
+      padding: 0.625rem 2rem;
+      line-height: 1.5;
+      transition: border 0.2s ease;
+      width: 100%;
+      min-height: 3.25rem;
+      letter-spacing: 0.14px;
+      outline: none;
+      margin: 10px 0;
+      border-radius: 0.3125rem;
+    }
+    button {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 3.125rem;
+      padding: 0.55556em 1.66667em;
+      vertical-align: middle;
+      border-radius: 1.5625rem;
+      box-shadow: none;
+      box-sizing: border-box;
+      font-size: 1em;
+      font-weight: 600;
+      line-height: 1;
+      color: #414147;
+      text-decoration: none;
+      text-align: center;
+      background-color: #fff;
+      border: 1px solid #0dacae;
+      border-top-color: rgb(13, 172, 174);
+      border-right-color: rgb(13, 172, 174);
+      border-bottom-color: rgb(13, 172, 174);
+      border-left-color: rgb(13, 172, 174);
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      outline: none;
+      cursor: pointer;
+      margin: 10px 0;
+      transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+      &:hover {
+        background-color: #0dacae;
+        color: #fff;
+      }
+    }
+    p {
+      max-width: 90%;
+      margin: 10px auto;
+      font-size: 15px;
+      text-align: center;
     }
   }
 }
