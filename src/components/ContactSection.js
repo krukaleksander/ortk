@@ -1,7 +1,9 @@
+import { useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import ContactForm from "./ContactForm";
 
 const ContactSection = () => {
+  const [showed, setShowed] = useState(false);
   return (
     <div className="contact">
       <div className="contact__wrapper">
@@ -9,10 +11,10 @@ const ContactSection = () => {
         <div className="contact__container">
           <h1>
             Skorzystaj z naszego wygodnego formularza a my odezwiemy się jak
-            najszybciej, lub w wskazanym przez Ciebie terminie
+            najszybciej, lub we wskazanym przez Ciebie terminie
           </h1>
           <div className="contact__btn-container">
-            <button className="contact__button">
+            <button className="contact__button" onClick={() => setShowed(true)}>
               formularz kontaktowy
               <span>
                 <BsArrowRight />
@@ -21,7 +23,7 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
-      <ContactForm />
+      {showed && <ContactForm setShowed={setShowed} />}
     </div>
   );
 };

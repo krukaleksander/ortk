@@ -1,17 +1,15 @@
-import { useState } from "react";
 import { CgClose } from "react-icons/cg";
 import "react-datetime/css/react-datetime.css";
 import Datetime from "react-datetime";
 import moment from "moment";
 import "moment/locale/pl";
 
-const ContactForm = () => {
-  const [value, onChange] = useState(new Date());
+const ContactForm = ({ setShowed }) => {
   return (
     <div className="contact-form">
       <form action="">
         <span>
-          <CgClose />
+          <CgClose onClick={() => setShowed(false)} />
         </span>
         <h2>Formularz kontaktowy</h2>
         <input type="text" placeholder="Imię" />
