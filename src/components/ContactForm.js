@@ -6,7 +6,8 @@ import "moment/locale/pl";
 
 const ContactForm = ({ setShowed }) => {
   return (
-    <div className="contact-form">
+    <>
+      <div className="contact-form" onClick={() => setShowed(false)}></div>
       <form action="">
         <span>
           <CgClose onClick={() => setShowed(false)} />
@@ -21,13 +22,13 @@ const ContactForm = ({ setShowed }) => {
           name=""
           id=""
           cols="30"
-          rows="5"
+          rows="2"
           placeholder="Widomość"
         ></textarea>
         <button>Wyślij</button>
         <p>Nasz przedstawiciel skontaktuje się w wybranym terminie.</p>
       </form>
-    </div>
+    </>
   );
 };
 
