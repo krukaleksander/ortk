@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import ContactForm from "./ContactForm";
+import PhoneIcon from "./PhoneIcon";
 
 const ContactSection = () => {
   const [showed, setShowed] = useState(false);
@@ -24,6 +25,7 @@ const ContactSection = () => {
         </div>
       </div>
       {showed && <ContactForm setShowed={setShowed} />}
+      <PhoneIcon setShowed={setShowed} showed={showed} />
     </div>
   );
 };
