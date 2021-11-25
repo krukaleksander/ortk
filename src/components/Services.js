@@ -42,6 +42,7 @@ const Services = () => {
         className="services__circle services__circle--power"
         onMouseOver={() => changeBg()}
         onMouseOut={() => returnBg()}
+        onClick={() => (window.location.href = `${window.location}energia`)}
       >
         <ImPowerCord /> <p>Prąd</p>
       </div>
@@ -49,6 +50,7 @@ const Services = () => {
         className="services__circle services__circle--gas"
         onMouseOver={() => changeBg("gas")}
         onMouseOut={() => returnBg()}
+        onClick={() => (window.location.href = `${window.location}gaz`)}
       >
         <GiFireZone /> <p>Gaz</p>
       </div>
