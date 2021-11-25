@@ -583,7 +583,7 @@ header img {
           flex-direction: column;
   width: 600px;
   background-color: #2c41a1;
-  padding: 40px 70px;
+  padding: 10px 70px;
   position: relative;
 }
 
@@ -984,5 +984,10 @@ header img {
   transition: opacity 0.3s;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.footer {
+  min-height: 400px;
+  background-color: #202066;
 }
 /*# sourceMappingURL=main.min.css.map */

@@ -11,6 +11,7 @@ import ContactPage from "./components/ContactPage";
 import ContactSection from "./components/ContactSection";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { BsFillTelephoneFill } from "react-icons/bs";
+import Footer from "./components/Footer";
 
 const App = () => {
   const Home = () => {
@@ -65,6 +66,7 @@ const App = () => {
             <Route exact path="/onas" element={<About />} />
             <Route exact path="/kontakt" element={<ContactPage />} />
           </Routes>
+          <Footer />
         </div>
       </Router>
     </div>
