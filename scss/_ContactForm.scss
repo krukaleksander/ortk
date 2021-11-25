@@ -104,11 +104,38 @@
         color: #fff;
       }
     }
+    h4 {
+      padding: 10px;
+    }
     p {
       max-width: 90%;
       margin: 10px auto;
       font-size: 15px;
       text-align: center;
+    }
+    .rdtPicker {
+      color: rgb(20, 19, 19);
+    }
+    .rdtPrev,
+    .rdtNext {
+      span {
+        position: static;
+        color: #2c41a1;
+      }
+    }
+    .rdtCounters {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .rdtCounter {
+        height: unset;
+        display: flex;
+        flex-direction: column;
+        .rdtBtn {
+          position: static;
+          color: #2c41a1;
+        }
+      }
     }
   }
 }

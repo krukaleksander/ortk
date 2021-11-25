@@ -1,6 +1,12 @@
+import { useState } from "react";
 import { CgClose } from "react-icons/cg";
+import "react-datetime/css/react-datetime.css";
+import Datetime from "react-datetime";
+import moment from "moment";
+import "moment/locale/pl";
 
 const ContactForm = () => {
+  const [value, onChange] = useState(new Date());
   return (
     <div className="contact-form">
       <form action="">
@@ -11,7 +17,8 @@ const ContactForm = () => {
         <input type="text" placeholder="Imię" />
         <input type="text" placeholder="Email" />
         <input type="text" placeholder="Telefon" />
-        <input id="example" type="text" />
+        <h4>Kiedy mamy się skontaktować?</h4>
+        <Datetime locale="pl" initialValue={new Date()} />
         <textarea
           name=""
           id=""
