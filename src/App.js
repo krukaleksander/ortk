@@ -4,17 +4,59 @@ import Services from "./components/Services";
 import Whyus from "./components/Whyus";
 import Whychange from "./components/Whychange";
 import Faq from "./components/Faq";
+import Energia from "./components/Energia";
+import Gaz from "./components/Gaz";
+import About from "./components/About";
+import ContactPage from "./components/ContactPage";
+
 import ContactSection from "./components/ContactSection";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
 const App = () => {
+  const Home = () => {
+    return (
+      <>
+        <Video />
+        <Services />
+        <Whyus />
+        <Whychange />
+        <Faq />
+        <ContactSection />
+      </>
+    );
+  };
   return (
     <div className="App">
-      <Header />
-      <Video />
-      <Services />
-      <Whyus />
-      <Whychange />
-      <Faq />
-      <ContactSection />
+      <Router>
+        <Header />
+        <div>
+          <ul>
+            <li>
+              <Link to="/">Strona główna</Link>
+            </li>
+            <li>
+              <Link to="/energia">Energia Elektryczna</Link>
+            </li>
+            <li>
+              <Link to="/gaz">Gaz</Link>
+            </li>
+            <li>
+              <Link to="/onas">O nas</Link>
+            </li>
+            <li>
+              <Link to="/kontakt">Kontakt</Link>
+            </li>
+          </ul>
+
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/gaz" element={<Gaz />} />
+            <Route exact path="/energia" element={<Energia />} />
+            <Route exact path="/onas" element={<About />} />
+            <Route exact path="/kontakt" element={<ContactPage />} />
+          </Routes>
+        </div>
+      </Router>
     </div>
   );
 };
