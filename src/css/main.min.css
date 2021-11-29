@@ -124,6 +124,7 @@ header img {
           align-items: center;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .services__circle:hover {

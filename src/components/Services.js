@@ -3,6 +3,7 @@ import { GiFireZone } from "react-icons/gi";
 import PowerImage from "../media/bg_before_movie.jpeg";
 import GasImage from "../media/bg-gas.jpeg";
 import BasicBg from "../media/bg-services.jpeg";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const changeBg = (medium = "power") => {
@@ -38,22 +39,22 @@ const Services = () => {
       <div className="services__colored services__colored--energy"></div>
       <div className="services__colored services__colored--gas"></div>
       <div className="services__colored services__colored--plus"></div>
-      <div
+      <Link
+        to="/energia"
         className="services__circle services__circle--power"
         onMouseOver={() => changeBg()}
         onMouseOut={() => returnBg()}
-        onClick={() => (window.location.href = `${window.location}energia`)}
       >
         <ImPowerCord /> <p>Prąd</p>
-      </div>
-      <div
+      </Link>
+      <Link
+        to="/gaz"
         className="services__circle services__circle--gas"
         onMouseOver={() => changeBg("gas")}
         onMouseOut={() => returnBg()}
-        onClick={() => (window.location.href = `${window.location}gaz`)}
       >
         <GiFireZone /> <p>Gaz</p>
-      </div>
+      </Link>
     </div>
   );
 };
