@@ -1,5 +1,7 @@
+import LetsStart from "./LetsStart";
+
 const Energia = () => {
-  return <h1>Energia</h1>;
+  return <LetsStart title={"Energia elektryczna"} />;
 };
 
 export default Energia;

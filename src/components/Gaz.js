@@ -1,5 +1,7 @@
+import LetsStart from "./LetsStart";
+
 const Gaz = () => {
-  return <h1>Gaz</h1>;
+  return <LetsStart title={"Gaz ziemny"} />;
 };
 
 export default Gaz;

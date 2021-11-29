@@ -22,7 +22,6 @@ const App = () => {
         <Whyus />
         <Whychange />
         <Faq />
-        <ContactSection />
       </>
     );
   };
@@ -66,6 +65,7 @@ const App = () => {
             <Route exact path="/onas" element={<About />} />
             <Route exact path="/kontakt" element={<ContactPage />} />
           </Routes>
+          <ContactSection />
           <Footer />
         </div>
       </Router>
