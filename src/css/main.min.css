@@ -914,6 +914,10 @@ form .rdtCounters .rdtCounter .rdtBtn {
   padding: 5px;
 }
 
+.navigation-wrapper .phone__email {
+  margin-left: 20px;
+}
+
 .navigation {
   display: -webkit-box;
   display: -ms-flexbox;

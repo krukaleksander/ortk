@@ -38,13 +38,6 @@ const Footer = () => {
           </span>
           <p>kontakt@obniz-rachunki.pl</p>
         </div>
-        <div className="adress">
-          <p>Kocia Siec Oleksii Tsymbaliuk</p>
-          <p>ul. Krzyżówki 1/39</p>
-          <p>03-193 Warszawa</p>
-          <p>NIP: 5272717482</p>
-          <p>REGON: 389920207</p>
-        </div>
       </div>
     </footer>
   );

@@ -11,6 +11,7 @@ import ContactPage from "./components/ContactPage";
 import ContactSection from "./components/ContactSection";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { BsFillTelephoneFill } from "react-icons/bs";
+import { AiOutlineMail } from "react-icons/ai";
 import Footer from "./components/Footer";
 
 const App = () => {
@@ -33,10 +34,18 @@ const App = () => {
             <Header />
             <div className="navigation-wrapper">
               <div className="phone">
-                <span>
-                  <BsFillTelephoneFill />
-                </span>
-                605 271 432
+                <div>
+                  <span>
+                    <BsFillTelephoneFill />
+                  </span>
+                  605 271 432
+                </div>
+                <div className="phone__email">
+                  <span>
+                    <AiOutlineMail />
+                  </span>
+                  kontakt@obniz-rachunki.pl
+                </div>
               </div>
               <ul className="navigation">
                 <li>
