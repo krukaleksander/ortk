@@ -30,13 +30,11 @@ const LetsStart = ({ title }) => {
               </div>
             </div>
             <p className="par">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-              eos odit illo excepturi sit, nulla eaque enim ratione fugiat est
-              laboriosam maxime dicta repellendus! Rem deserunt aspernatur
-              corrupti reiciendis. Sed? Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Voluptas eos odit illo excepturi sit, nulla
-              eaque enim ratione fugiat est laboriosam maxime dicta repellendus!
-              Rem deserunt aspernatur corrupti reiciendis. Sed?
+              Pierwszym krokiem jest przeanalizowanie otrzymanych przez Ciebie
+              faktur. To konieczne, bo przecież nic jeszcze nie wiemy o Twoich
+              przyłączach i wymaganiach. Ustalimy czy dobrze masz dobraną moc,
+              jakie masz zużycie czy też jaką grupę taryfową. Będzie to dla nas
+              bazą do tego abyśmy mogli ustalić jakie są Twoje potrzeby.
             </p>
           </div>
           <div className="step-arrow step-arrow--right">
@@ -53,13 +51,12 @@ const LetsStart = ({ title }) => {
               </div>
             </div>
             <p className="par">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-              eos odit illo excepturi sit, nulla eaque enim ratione fugiat est
-              laboriosam maxime dicta repellendus! Rem deserunt aspernatur
-              corrupti reiciendis. Sed? Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Voluptas eos odit illo excepturi sit, nulla
-              eaque enim ratione fugiat est laboriosam maxime dicta repellendus!
-              Rem deserunt aspernatur corrupti reiciendis. Sed?
+              Uzyskaliśmy możliwość uzyskiwania ofert na warunkach
+              preferencyjnych od 10 sprzedawców prądu i 6 sprzedawców gazu.
+              Wystąpimy do nich wszystkich z danymi, które pozyskaliśmy w
+              poprzednim etapie. Oni doskonale wiedzą, że nie pytamy tylko ich,
+              dlatego każdy da najlepsze co w danej chwili może. Kiedy wszystkie
+              oferty się pojawią wybierzemy najlepsze i przedstawimy je Tobie.
             </p>
           </div>
           <div className="step-arrow step-arrow--left">
@@ -76,13 +73,12 @@ const LetsStart = ({ title }) => {
               </div>
             </div>
             <p className="par">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-              eos odit illo excepturi sit, nulla eaque enim ratione fugiat est
-              laboriosam maxime dicta repellendus! Rem deserunt aspernatur
-              corrupti reiciendis. Sed? Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Voluptas eos odit illo excepturi sit, nulla
-              eaque enim ratione fugiat est laboriosam maxime dicta repellendus!
-              Rem deserunt aspernatur corrupti reiciendis. Sed?
+              Mamy już oferty, warto zatem je dogłębnie przeanalizować.
+              Dzisiejsze niestabilne czasy pokazują, że oprócz informacji o
+              cenie warto wiedzieć co nieco o swoim przyszłym sprzedawcy. My
+              znamy ich na wylot, chętnie podzielimy się z Tobą naszą wiedzą.
+              Wspólnie wyierzemy ofertę, która zapewni korzystne warunki i pewną
+              przyszłość.
             </p>
           </div>
           <div className="step-arrow step-arrow--right">
@@ -99,13 +95,12 @@ const LetsStart = ({ title }) => {
               </div>
             </div>
             <p className="par">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-              eos odit illo excepturi sit, nulla eaque enim ratione fugiat est
-              laboriosam maxime dicta repellendus! Rem deserunt aspernatur
-              corrupti reiciendis. Sed? Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Voluptas eos odit illo excepturi sit, nulla
-              eaque enim ratione fugiat est laboriosam maxime dicta repellendus!
-              Rem deserunt aspernatur corrupti reiciendis. Sed?
+              Pozostała już tylko formalność - podpisanie umowy. Nie z nami ją
+              podpisujesz a z nowym sprzedawcą. Podpisać i dostarczyć musimy
+              dokumenty w odpowiednim wskazanym terminie. Zmienność cen na TGE
+              powoduje, że sprzedawcy muszą jak najszybciej kupić dla Ciebie
+              odpowiednią ilość energii czy gazu i zabezpieczyć w ten sposób
+              ceny.
             </p>
           </div>
         </div>
