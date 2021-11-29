@@ -985,5 +985,55 @@ form .rdtCounters .rdtCounter .rdtBtn {
 .footer {
   min-height: 400px;
   background-color: #202066;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 20px;
+  color: #83b6d6;
+  padding-top: 20px;
+}
+
+.footer h3 {
+  color: #0dacae;
+}
+
+.footer__shortcut ul {
+  list-style: none;
+}
+
+.footer__shortcut ul li a {
+  color: #83b6d6;
+  line-height: 180%;
+  text-decoration: none;
+}
+
+.footer__company-info {
+  line-height: 150%;
+}
+
+.footer__company-info div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px auto;
+}
+
+.footer__company-info div span {
+  color: #0dacae;
+  font-weight: bolder;
+  margin-right: 10px;
+}
+
+.footer__company-info .adress {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=main.min.css.map */
