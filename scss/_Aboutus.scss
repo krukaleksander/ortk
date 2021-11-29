@@ -1,0 +1,97 @@
+.about {
+  &__header {
+    min-height: 100vh;
+    background: url("../media/aboutus.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    .colored-blue {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(55, 82, 204, 0.7);
+      z-index: 1;
+    }
+    .colored-blue-fiter {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      z-index: 0;
+      background: url("../media/frame.png");
+    }
+    .content-header {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: white;
+      text-shadow: 1px 1px black;
+      h1 {
+        font-size: 30px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.about__main {
+  display: flex;
+  padding: 120px 40px;
+  .text {
+    flex-basis: 30%;
+    h3 {
+      font-size: 30px;
+      font-weight: 100;
+      letter-spacing: 2px;
+      line-height: 1.5;
+    }
+    p {
+      font-weight: bolder;
+      letter-spacing: 1px;
+      margin-top: 20px;
+      line-height: 1.5;
+      color: #0dacae;
+    }
+  }
+  .numbers {
+    flex-basis: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+      padding: 10px;
+      margin: 10px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -25px;
+        width: 3.125rem;
+        border-bottom: 0.0625rem solid #0dacae;
+      }
+      p {
+        color: black;
+        font-weight: bolder;
+        font-size: 80px;
+        text-align: center;
+      }
+      span {
+        color: #747580;
+      }
+    }
+  }
+}
