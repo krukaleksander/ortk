@@ -1,0 +1,18 @@
+.go-to-the-top {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 9999;
+  color: #747580;
+  background-color: #202066;
+  border: 1px solid white;
+  font-weight: 400;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}

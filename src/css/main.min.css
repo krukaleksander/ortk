@@ -758,7 +758,6 @@ form .rdtCounters .rdtCounter .rdtBtn {
   transition: background-color 0.15s;
   height: 50px;
   width: 50px;
-  position: relative;
   -webkit-animation: phone 5s linear infinite;
           animation: phone 5s linear infinite;
   position: fixed;
@@ -914,7 +913,7 @@ form .rdtCounters .rdtCounter .rdtBtn {
   padding: 5px;
 }
 
-.navigation-wrapper .phone__email {
+.navigation-wrapper .phone__email, .navigation-wrapper .phone__working-hours {
   margin-left: 20px;
 }
 
@@ -940,7 +939,7 @@ form .rdtCounters .rdtCounter .rdtBtn {
 }
 
 .navigation li {
-  padding: 10px;
+  padding: 10px 27px;
   color: #202066;
   position: relative;
 }
@@ -989,7 +988,7 @@ form .rdtCounters .rdtCounter .rdtBtn {
 }
 
 .footer {
-  min-height: 400px;
+  min-height: 250px;
   background-color: #202066;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1333,5 +1332,28 @@ form .rdtCounters .rdtCounter .rdtBtn {
 
 .about__main .numbers div span {
   color: #747580;
+}
+
+.go-to-the-top {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 9999;
+  color: #747580;
+  background-color: #202066;
+  border: 1px solid white;
+  font-weight: 400;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
 }
 /*# sourceMappingURL=main.min.css.map */

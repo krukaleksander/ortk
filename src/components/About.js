@@ -1,4 +1,8 @@
+import { useEffect } from "react";
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="about">
       <header className="about__header">

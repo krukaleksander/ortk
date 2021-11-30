@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Header from "./components/Header";
 import { Video } from "./components/Video";
 import Services from "./components/Services";
@@ -12,10 +13,25 @@ import ContactSection from "./components/ContactSection";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
+import { MdOutlineHomeWork } from "react-icons/md";
 import Footer from "./components/Footer";
+import GoToTopBtn from "./components/GoToTopBtn";
 
 const App = () => {
+  const displayGoToTopFn = () => {
+    const scrollFromTop = window.scrollY;
+    if (scrollFromTop >= 500) {
+      document.querySelector(".go-to-the-top").style.display = "inline-flex";
+    }
+    if (scrollFromTop < 500) {
+      document.querySelector(".go-to-the-top").style.display = "none";
+    }
+  };
+  window.addEventListener("scroll", displayGoToTopFn);
   const Home = () => {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
     return (
       <>
         <Video />
@@ -26,6 +42,7 @@ const App = () => {
       </>
     );
   };
+
   return (
     <div className="App">
       <Router>
@@ -45,6 +62,12 @@ const App = () => {
                     <AiOutlineMail />
                   </span>
                   kontakt@obniz-rachunki.pl
+                </div>
+                <div className="phone__working-hours">
+                  <span>
+                    <MdOutlineHomeWork />
+                  </span>
+                  PN-PT 8-16
                 </div>
               </div>
               <ul className="navigation">
@@ -76,6 +99,7 @@ const App = () => {
           </Routes>
           <ContactSection />
           <Footer />
+          <GoToTopBtn />
         </div>
       </Router>
     </div>

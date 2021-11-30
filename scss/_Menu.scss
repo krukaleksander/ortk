@@ -16,7 +16,8 @@
       color: #0dacae;
       padding: 5px;
     }
-    &__email {
+    &__email,
+    &__working-hours {
       margin-left: 20px;
     }
   }
@@ -34,7 +35,7 @@
   padding-top: 10px;
   border-top: 1px solid#ddd;
   li {
-    padding: 10px;
+    padding: 10px 27px;
     color: #202066;
     position: relative;
     a {

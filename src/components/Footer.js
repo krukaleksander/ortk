@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
+import { MdOutlineHomeWork } from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -37,6 +38,12 @@ const Footer = () => {
             <AiOutlineMail />
           </span>
           <p>kontakt@obniz-rachunki.pl</p>
+        </div>
+        <div className="company-info__working-hours">
+          <span>
+            <MdOutlineHomeWork />
+          </span>
+          <p>Godziny pracy: PN-PT 8-16</p>
         </div>
       </div>
     </footer>
