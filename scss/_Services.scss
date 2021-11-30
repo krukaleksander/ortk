@@ -23,6 +23,10 @@
     align-items: center;
     transition: 0.3s;
     text-decoration: none;
+    @include mq(large) {
+      width: 200px;
+      height: 200px;
+    }
     &:hover {
       transform: scale(1.25);
     }
@@ -61,7 +65,7 @@
     }
     &--image {
       display: block;
-      transform: scale(1.5);
+      // transform: scale(1.5);
       transition: all 0.4s cubic-bezier(0.4, 0, 1, 1);
     }
   }

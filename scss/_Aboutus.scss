@@ -50,6 +50,9 @@
 .about__main {
   display: flex;
   padding: 120px 40px;
+  @include mq(large) {
+    padding: 100px 40px;
+  }
   .text {
     flex-basis: 30%;
     h3 {
@@ -57,6 +60,9 @@
       font-weight: 100;
       letter-spacing: 2px;
       line-height: 1.5;
+      @include mq(large) {
+        font-size: 25px;
+      }
     }
     p {
       font-weight: bolder;
@@ -64,6 +70,9 @@
       margin-top: 20px;
       line-height: 1.5;
       color: #0dacae;
+      @include mq(large) {
+        font-size: 14px;
+      }
     }
   }
   .numbers {
@@ -75,6 +84,9 @@
       padding: 10px;
       margin: 10px;
       position: relative;
+      @include mq(large) {
+        padding: 5px;
+      }
       &::after {
         content: "";
         position: absolute;
@@ -88,9 +100,15 @@
         font-weight: bolder;
         font-size: 80px;
         text-align: center;
+        @include mq(large) {
+          font-size: 50px;
+        }
       }
       span {
         color: #747580;
+        @include mq(large) {
+          font-size: 15px;
+        }
       }
     }
   }

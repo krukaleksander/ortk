@@ -7,6 +7,9 @@
     font-size: 24px;
     color: #0c0c26;
     display: flex;
+    @include mq(large) {
+      font-size: 20px;
+    }
     span {
       display: inline-block;
       margin-right: 5px;
@@ -20,6 +23,9 @@
     font-size: 30px;
     font-weight: 400;
     letter-spacing: 2px;
+    @include mq(large) {
+      font-size: 25px;
+    }
   }
   &__container {
     display: flex;
@@ -48,6 +54,9 @@
       font-weight: bold;
       letter-spacing: 2px;
       line-height: 150%;
+      @include mq(large) {
+        font-size: 20px;
+      }
     }
     p {
       color: #747580;
@@ -56,6 +65,9 @@
       font-size: 18px;
       font-weight: 400;
       padding-top: 20px;
+      @include mq(large) {
+        font-size: 15px;
+      }
     }
   }
 }

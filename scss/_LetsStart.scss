@@ -19,6 +19,8 @@
     &__colored {
       background: url("../media/gradient-power.jpeg");
       opacity: 0.9;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
     &__plus {
       background: url("../media/plus.png");
@@ -70,6 +72,9 @@
       &--two,
       &--four {
         margin-left: 300px;
+        @include mq(large) {
+          margin-left: 150px;
+        }
       }
       .step__body {
         display: flex;

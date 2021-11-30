@@ -28,10 +28,16 @@
     padding: 10px;
     span {
       font-size: 50px;
+      @include mq(large) {
+        font-size: 40px;
+      }
     }
     p {
       font-size: 25px;
       align-self: center;
+      @include mq(large) {
+        font-size: 20px;
+      }
     }
   }
 }

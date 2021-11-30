@@ -99,7 +99,7 @@ const ContactForm = ({ setShowed }) => {
           id=""
           cols="30"
           rows="2"
-          placeholder="Widomość"
+          placeholder="Wiadomość"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           onFocus={() => setError("")}

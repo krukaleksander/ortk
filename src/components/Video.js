@@ -10,7 +10,8 @@ export const Video = () => {
       </div>
       <div className="video__color"></div>
       <h1 className="video__title">
-        Sprzedawca energii co chwila podnosi Ci cenę? To nie musi tak wyglądać!
+        W Twojej FIRMIE ciągle rosną rachunki za prąd i gaz? To nie musi tak
+        wyglądać!
       </h1>
     </div>
   );

@@ -5,7 +5,7 @@ const Gaz = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  return <LetsStart title={"Gaz ziemny"} />;
+  return <LetsStart title={"Gaz ziemny dla firm"} />;
 };
 
 export default Gaz;

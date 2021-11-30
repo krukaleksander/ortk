@@ -5,7 +5,7 @@ const Energia = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  return <LetsStart title={"Energia elektryczna"} />;
+  return <LetsStart title={"Energia elektryczna dla firm"} />;
 };
 
 export default Energia;

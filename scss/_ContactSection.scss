@@ -27,6 +27,9 @@
       flex-basis: 75%;
       letter-spacing: 1px;
       line-height: 1.4;
+      @include mq(large) {
+        font-size: 25px;
+      }
     }
 
     button {

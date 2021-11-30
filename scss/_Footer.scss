@@ -9,6 +9,9 @@
   padding-top: 20px;
   h3 {
     color: #0dacae;
+    @include mq(large) {
+      font-size: 20px;
+    }
   }
   &__shortcut {
     ul {
@@ -18,6 +21,9 @@
           color: #83b6d6;
           line-height: 180%;
           text-decoration: none;
+          @include mq(large) {
+            font-size: 18px;
+          }
         }
       }
     }
@@ -31,6 +37,14 @@
         color: #0dacae;
         font-weight: bolder;
         margin-right: 10px;
+        @include mq(large) {
+          font-size: 18px;
+        }
+      }
+      p {
+        @include mq(large) {
+          font-size: 18px;
+        }
       }
     }
     .adress {

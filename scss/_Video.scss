@@ -49,5 +49,8 @@
     width: 500px;
     font-size: 55px;
     color: whitesmoke;
+    @include mq(xlarge) {
+      font-size: 35px;
+    }
   }
 }

@@ -38,6 +38,13 @@
     padding: 10px 27px;
     color: #202066;
     position: relative;
+    @include mq(xlarge) {
+      padding: 10px 15px;
+    }
+    @include mq(large) {
+      padding: 10px 12px;
+      font-size: 17px;
+    }
     a {
       text-decoration: none;
       transition: 0.3s;
