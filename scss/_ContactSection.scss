@@ -23,6 +23,9 @@
   }
   &__container {
     display: flex;
+    @include mq(small) {
+      flex-direction: column;
+    }
     h1 {
       flex-basis: 75%;
       letter-spacing: 1px;
@@ -52,6 +55,9 @@
         transition: transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
         pointer-events: none;
         color: white;
+        @include mq(small) {
+          display: none;
+        }
       }
       &:hover {
         span {
@@ -70,6 +76,9 @@
         transform: translate(-50%, -50%);
         opacity: 0.15;
         pointer-events: none;
+        @include mq(small) {
+          display: none;
+        }
       }
     }
   }
@@ -78,5 +87,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include mq(small) {
+      justify-content: flex-start;
+    }
   }
 }

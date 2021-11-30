@@ -14,10 +14,15 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import { MdOutlineHomeWork } from "react-icons/md";
+import { ImCross } from "react-icons/im";
 import Footer from "./components/Footer";
 import GoToTopBtn from "./components/GoToTopBtn";
 
 const App = () => {
+  const hideMenuFn = () => {
+    if (window.screen.width > 1025) return;
+    document.querySelector(".navigation").style.left = "-300px";
+  };
   const displayGoToTopFn = () => {
     const scrollFromTop = window.scrollY;
     if (scrollFromTop >= 500) {
@@ -71,20 +76,33 @@ const App = () => {
                 </div>
               </div>
               <ul className="navigation">
-                <li>
-                  <Link to="/">Strona główna</Link>
+                <li className="close-mobile-menu">
+                  <ImCross onClick={() => hideMenuFn()} />
                 </li>
                 <li>
-                  <Link to="/energia">Energia Elektryczna</Link>
+                  <Link to="/" onClick={() => hideMenuFn()}>
+                    Strona główna
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/gaz">Gaz</Link>
+                  <Link to="/energia" onClick={() => hideMenuFn()}>
+                    Energia Elektryczna
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/onas">O nas</Link>
+                  <Link to="/gaz" onClick={() => hideMenuFn()}>
+                    Gaz
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/kontakt">Kontakt</Link>
+                  <Link to="/onas" onClick={() => hideMenuFn()}>
+                    O nas
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/kontakt" onClick={() => hideMenuFn()}>
+                    Kontakt
+                  </Link>
                 </li>
               </ul>
             </div>

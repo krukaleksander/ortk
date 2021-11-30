@@ -38,6 +38,9 @@
       @include mq(large) {
         font-size: 20px;
       }
+      @include mq(small) {
+        font-size: 17px;
+      }
     }
   }
 }

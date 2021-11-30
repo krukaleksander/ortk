@@ -5,6 +5,9 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  @include mq(medium) {
+    justify-content: center;
+  }
   .phone {
     flex-basis: 50%;
     padding-left: 50px;
@@ -34,6 +37,30 @@
   padding-left: 50px;
   padding-top: 10px;
   border-top: 1px solid#ddd;
+  @include mq(medium) {
+    position: fixed;
+    top: 120px;
+    left: -300px;
+    flex-direction: column;
+    z-index: 9999;
+    background-color: white;
+    width: 300px;
+    line-height: 1.8;
+    font-weight: bolder;
+    color: #1e306e;
+    padding: 20px 5px;
+    transition: 0.3s;
+  }
+  .close-mobile-menu {
+    display: none;
+    @include mq(medium) {
+      display: block;
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      z-index: 2;
+    }
+  }
   li {
     padding: 10px 27px;
     color: #202066;
@@ -48,6 +75,9 @@
     a {
       text-decoration: none;
       transition: 0.3s;
+      &:visited {
+        color: #1e306e;
+      }
     }
     &:hover a {
       color: #0dacae;
@@ -64,6 +94,9 @@
       width: 8px;
       height: 8px;
       margin-top: -0.21875rem;
+      @include mq(medium) {
+        content: unset;
+      }
     }
     &:hover::before {
       content: "";
@@ -78,6 +111,9 @@
       position: absolute;
       transition: opacity 0.3s;
       transform: translateX(-50%);
+      @include mq(medium) {
+        content: unset;
+      }
     }
   }
 }
