@@ -7,7 +7,7 @@
   z-index: 9998;
   background: #000000b0;
 }
-form {
+.form {
   z-index: 9999;
   position: fixed;
   top: 50%;
@@ -138,5 +138,31 @@ form {
         color: #2c41a1;
       }
     }
+  }
+}
+.sending {
+  &__info {
+    text-align: center;
+  }
+  &__ring {
+    width: 10px;
+    height: 10px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 7px dashed #4b9cdb;
+    border-radius: 100%;
+    animation: loadingD 1.5s 0.3s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
+  }
+}
+
+@keyframes loadingD {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

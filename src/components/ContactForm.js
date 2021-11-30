@@ -42,7 +42,7 @@ const ContactForm = ({ setShowed }) => {
       data.append("clientPhone", phone);
       data.append("clientDate", date);
       data.append("clientMessage", message);
-      fetch(`https://energy2000.herokuapp.com/kociasiec-msg`, {
+      fetch(`https://energy2000.herokuapp.com/or-msg`, {
         method: "post",
         body: data,
       })
@@ -59,7 +59,7 @@ const ContactForm = ({ setShowed }) => {
   return (
     <>
       <div className="contact-form" onClick={() => setShowed(false)}></div>
-      <form action="">
+      <div className="form">
         <span>
           <CgClose onClick={() => setShowed(false)} />
         </span>
@@ -91,8 +91,7 @@ const ContactForm = ({ setShowed }) => {
         <Datetime
           locale="pl"
           initialValue={new Date()}
-          value={date}
-          onChange={(e) => setDate(e.target.value)}
+          onChange={(e) => setDate(e._d)}
           onFocus={() => setError("")}
         />
         <textarea
@@ -116,7 +115,7 @@ const ContactForm = ({ setShowed }) => {
           </div>
         )}
         <p>Nasz przedstawiciel skontaktuje się w wybranym terminie.</p>
-      </form>
+      </div>
     </>
   );
 };

@@ -565,7 +565,7 @@ header img {
   background: #000000b0;
 }
 
-form {
+.form {
   z-index: 9999;
   position: fixed;
   top: 50%;
@@ -584,7 +584,7 @@ form {
   padding: 10px 70px;
 }
 
-form span {
+.form span {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -593,16 +593,16 @@ form span {
   cursor: pointer;
 }
 
-form span:hover {
+.form span:hover {
   color: white;
 }
 
-form h2 {
+.form h2 {
   text-align: center;
   padding: 10px;
 }
 
-form input {
+.form input {
   color: #414147;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -623,7 +623,7 @@ form input {
   margin-top: 10px;
 }
 
-form textarea {
+.form textarea {
   color: #414147;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -645,7 +645,7 @@ form textarea {
   border-radius: 0.3125rem;
 }
 
-form button {
+.form button {
   position: relative;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -687,33 +687,33 @@ form button {
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
-form button:hover {
+.form button:hover {
   background-color: #0dacae;
   color: #fff;
 }
 
-form h4 {
+.form h4 {
   padding: 10px;
 }
 
-form p {
+.form p {
   max-width: 90%;
   margin: 10px auto;
   font-size: 15px;
   text-align: center;
 }
 
-form .rdtPicker {
+.form .rdtPicker {
   color: #141313;
 }
 
-form .rdtPrev span,
-form .rdtNext span {
+.form .rdtPrev span,
+.form .rdtNext span {
   position: static;
   color: #2c41a1;
 }
 
-form .rdtCounters {
+.form .rdtCounters {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -725,7 +725,7 @@ form .rdtCounters {
           align-items: center;
 }
 
-form .rdtCounters .rdtCounter {
+.form .rdtCounters .rdtCounter {
   height: unset;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -736,9 +736,54 @@ form .rdtCounters .rdtCounter {
           flex-direction: column;
 }
 
-form .rdtCounters .rdtCounter .rdtBtn {
+.form .rdtCounters .rdtCounter .rdtBtn {
   position: static;
   color: #2c41a1;
+}
+
+.sending__info {
+  text-align: center;
+}
+
+.sending__ring {
+  width: 10px;
+  height: 10px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 7px dashed #4b9cdb;
+  border-radius: 100%;
+  -webkit-animation: loadingD 1.5s 0.3s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
+          animation: loadingD 1.5s 0.3s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
+}
+
+@-webkit-keyframes loadingD {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes loadingD {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 .phone-icon {
