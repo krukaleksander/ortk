@@ -1,5 +1,17 @@
+.header-wrapper {
+  display: flex;
+  @include mq(ultrasmall) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 header {
   border-right: 1px solid#ddd;
+  @include mq(ultrasmall) {
+    border-right: unset;
+  }
+
   .mobile-menu-icon {
     display: none;
     @include mq(medium) {

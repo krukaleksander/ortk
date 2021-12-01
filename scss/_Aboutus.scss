@@ -23,6 +23,9 @@
       bottom: 0px;
       z-index: 0;
       background: url("../media/frame.png");
+      @include mq(xsmall) {
+        background: unset;
+      }
     }
     .content-header {
       position: absolute;
@@ -37,11 +40,21 @@
       flex-direction: column;
       color: white;
       text-shadow: 1px 1px black;
+      @include mq(xsmall) {
+        padding: 20px;
+      }
       h1 {
         font-size: 30px;
+        @include mq(xsmall) {
+          font-size: 25px;
+          text-align: center;
+        }
       }
       h2 {
         font-size: 20px;
+        @include mq(xsmall) {
+          font-size: 15px;
+        }
       }
     }
   }
@@ -85,6 +98,9 @@
       @include mq(iphone67) {
         font-size: 12px;
       }
+      @include mq(xsmall) {
+        font-size: 15px;
+      }
     }
   }
   .numbers {
@@ -92,12 +108,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include mq(xsmall) {
+      flex-direction: column;
+      flex-basis: 95%;
+    }
     div {
       padding: 10px;
       margin: 10px;
       position: relative;
       @include mq(large) {
         padding: 5px;
+      }
+      @include mq(xsmall) {
+        margin: 20px auto;
       }
       &::after {
         content: "";
@@ -119,11 +142,18 @@
           font-size: 40px;
           text-align: left;
         }
+        @include mq(xsmall) {
+          font-size: 50px;
+          text-align: center;
+        }
       }
       span {
         color: #747580;
         @include mq(large) {
           font-size: 15px;
+        }
+        @include mq(xsmall) {
+          font-size: 20px;
         }
       }
     }

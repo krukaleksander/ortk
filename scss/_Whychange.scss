@@ -45,6 +45,9 @@
     flex-basis: 33%;
     display: flex;
     padding: 10px;
+    @include mq(xsmall) {
+      flex-basis: 99%;
+    }
     span {
       font-size: 50px;
       @include mq(large) {
@@ -52,6 +55,9 @@
       }
       @include mq(iphone67) {
         font-size: 30px;
+      }
+      @include mq(xsmall) {
+        font-size: 50px;
       }
     }
     p {
@@ -65,6 +71,9 @@
       }
       @include mq(iphone67) {
         font-size: 15px;
+      }
+      @include mq(xsmall) {
+        font-size: 20px;
       }
     }
   }

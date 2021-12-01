@@ -28,6 +28,18 @@
   @include mq(galaxys5land) {
     width: 500px;
   }
+  @include mq(xsmall) {
+    width: 340px;
+    padding: 10px;
+    text-align: center;
+  }
+  @include mq(ultrasmall) {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    top: 0;
+    bottom: 0;
+    transform: translate(-50%, 0%);
+  }
   span {
     position: absolute;
     top: 10px;
@@ -44,6 +56,9 @@
     padding: 10px;
     @include mq(galaxys5land) {
       font-size: 20px;
+    }
+    @include mq(xsmall) {
+      font-size: 15px;
     }
   }
   input {
@@ -66,6 +81,11 @@
     @include mq(galaxys5land) {
       font-size: 16px;
     }
+    @include mq(xsmall) {
+      padding: 10px;
+      width: 300px;
+      margin: 5px auto;
+    }
   }
   textarea {
     color: #414147;
@@ -85,6 +105,10 @@
     outline: none;
     margin: 10px 0;
     border-radius: 0.3125rem;
+    @include mq(xsmall) {
+      width: 300px;
+      margin: 5px auto;
+    }
   }
   button {
     position: relative;
@@ -120,6 +144,10 @@
     &:hover {
       background-color: #0dacae;
       color: #fff;
+    }
+    @include mq(xsmall) {
+      width: 150px;
+      margin: 5px auto;
     }
   }
   h4 {

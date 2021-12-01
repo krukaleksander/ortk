@@ -22,6 +22,22 @@ $blue: #03b5d2;
   &__title {
     color: #143a69;
   }
+  .accordion button {
+    @include mq(xsmall) {
+      width: 95%;
+      font-size: 15px;
+    }
+    .icon {
+      @include mq(xsmall) {
+        right: -25px;
+      }
+    }
+  }
+  .accordion .accordion-content p {
+    @include mq(xsmall) {
+      font-size: 14px;
+    }
+  }
 }
 
 .container {

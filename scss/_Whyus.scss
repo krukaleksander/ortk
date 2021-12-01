@@ -48,6 +48,9 @@
     @include mq(galaxys5land) {
       flex-basis: 50%;
     }
+    @include mq(xsmall) {
+      flex-basis: 95%;
+    }
 
     &--under {
       align-self: center;

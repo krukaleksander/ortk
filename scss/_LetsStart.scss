@@ -6,6 +6,7 @@
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
+
     &__colored,
     &__plus,
     &__text {
@@ -15,6 +16,9 @@
       right: 0px;
       bottom: 0px;
       z-index: 0;
+      @include mq(xsmall) {
+        padding: 20px;
+      }
     }
     &__colored {
       background: url("../media/gradient-power.jpeg");
@@ -72,10 +76,17 @@
         bottom: 8px;
         width: 3.125rem;
         border-bottom: 0.0625rem solid #0dacae;
+        @include mq(xsmall) {
+          content: unset;
+        }
       }
       p {
         font-weight: bolder;
         padding-left: 60px;
+        @include mq(xsmall) {
+          padding-left: 10px;
+          font-size: 15px;
+        }
       }
     }
     &__step {
@@ -94,21 +105,37 @@
           margin-left: 40px;
           margin-top: 0px;
         }
+        @include mq(xsmall) {
+          margin: 10px auto;
+        }
       }
       .step__body {
         display: flex;
+        @include mq(xsmall) {
+          flex-direction: column;
+        }
         .par {
           color: #7f7583;
           max-width: 70%;
           padding-left: 80px;
           letter-spacing: 1px;
           line-height: 150%;
+          @include mq(xsmall) {
+            max-width: 90%;
+            padding-left: 10px;
+            margin: 10px auto;
+          }
         }
       }
       .circle {
         display: flex;
-        justify-content: center;
+        justify-content: flex;
         align-items: center;
+        @include mq(xsmall) {
+          flex-direction: column;
+          align-items: flex-start;
+          padding-left: 20px;
+        }
         span {
           width: 100px;
           height: 100px;
@@ -125,6 +152,12 @@
             height: 70px;
             font-size: 30px;
           }
+          @include mq(xsmall) {
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+            margin-left: 10px;
+          }
         }
         p {
           font-weight: bolder;
@@ -136,6 +169,9 @@
           @include mq(iphone67) {
             font-size: 20px;
           }
+          @include mq(xsmall) {
+            display: inline-block;
+          }
         }
       }
     }
@@ -146,6 +182,9 @@
       margin: 30px;
       @include mq(iphone67) {
         margin: 10px;
+      }
+      @include mq(xsmall) {
+        display: none;
       }
       &--left {
         text-align: right;
