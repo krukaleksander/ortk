@@ -13,6 +13,13 @@
     align-items: center;
     color: #202066;
     letter-spacing: 1px;
+    a {
+      text-decoration: none;
+      color: #202066;
+      &:visited {
+        color: #202066;
+      }
+    }
     @include mq(iphone67) {
       font-size: 14px;
       padding-left: 10px;
@@ -76,7 +83,7 @@
     transition: 0.3s;
   }
   @include mq(iphone67) {
-    top: 70px;
+    top: 40px;
   }
   .close-mobile-menu {
     display: none;

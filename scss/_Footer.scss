@@ -53,6 +53,13 @@
     div {
       display: flex;
       margin: 10px auto;
+      a {
+        text-decoration: none;
+        color: #0dacae;
+        &:visited {
+          color: #0dacae;
+        }
+      }
       @include mq(xsmall) {
         justify-content: center;
       }

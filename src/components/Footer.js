@@ -31,7 +31,9 @@ const Footer = () => {
           <span>
             <AiOutlinePhone />
           </span>
-          <p>605 271 432</p>
+          <p>
+            <a href="tel:+48605271432">605 271 432</a>
+          </p>
         </div>
         <div className="company-info__mail">
           <span>

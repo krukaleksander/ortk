@@ -1390,6 +1390,15 @@ header img {
   letter-spacing: 1px;
 }
 
+.navigation-wrapper .phone a {
+  text-decoration: none;
+  color: #202066;
+}
+
+.navigation-wrapper .phone a:visited {
+  color: #202066;
+}
+
 @media (max-width: 740px) {
   .navigation-wrapper .phone {
     font-size: 14px;
@@ -1481,7 +1490,7 @@ header img {
 
 @media (max-width: 740px) {
   .navigation {
-    top: 70px;
+    top: 40px;
   }
 }
 
@@ -1669,6 +1678,15 @@ header img {
   display: -ms-flexbox;
   display: flex;
   margin: 10px auto;
+}
+
+.footer__company-info div a {
+  text-decoration: none;
+  color: #0dacae;
+}
+
+.footer__company-info div a:visited {
+  color: #0dacae;
 }
 
 @media (max-width: 481px) {

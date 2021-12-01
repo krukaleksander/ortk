@@ -60,7 +60,7 @@ const App = () => {
                   <span>
                     <BsFillTelephoneFill />
                   </span>
-                  605 271 432
+                  <a href="tel:+48605271432">605 271 432</a>
                 </div>
                 <div className="phone__email">
                   <span>
