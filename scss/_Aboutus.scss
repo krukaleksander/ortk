@@ -53,8 +53,14 @@
   @include mq(large) {
     padding: 100px 40px;
   }
+  @include mq(galaxys5land) {
+    flex-wrap: wrap;
+  }
   .text {
     flex-basis: 30%;
+    @include mq(galaxys5land) {
+      flex-basis: 95%;
+    }
     h3 {
       font-size: 30px;
       font-weight: 100;
@@ -62,6 +68,9 @@
       line-height: 1.5;
       @include mq(large) {
         font-size: 25px;
+      }
+      @include mq(iphone67) {
+        font-size: 18px;
       }
     }
     p {
@@ -72,6 +81,9 @@
       color: #0dacae;
       @include mq(large) {
         font-size: 14px;
+      }
+      @include mq(iphone67) {
+        font-size: 12px;
       }
     }
   }
@@ -102,6 +114,10 @@
         text-align: center;
         @include mq(large) {
           font-size: 50px;
+        }
+        @include mq(iphone67) {
+          font-size: 40px;
+          text-align: left;
         }
       }
       span {

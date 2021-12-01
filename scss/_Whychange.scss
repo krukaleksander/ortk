@@ -3,6 +3,10 @@
   background: linear-gradient(90deg, #2c41a1, #272f84);
   color: whitesmoke;
   padding: 120px 0;
+  @include mq(galaxys5land) {
+    padding: 10px;
+    min-height: 300px;
+  }
   &__wrapper {
     width: 80%;
     margin: 0 auto;
@@ -11,16 +15,31 @@
     font-size: 30px;
     font-weight: 400;
     letter-spacing: 1px;
+    @include mq(iphone67) {
+      font-size: 25px;
+    }
+    @include mq(galaxys5land) {
+      font-size: 20px;
+    }
   }
   h2 {
     font-size: 20px;
     font-weight: 100;
     padding: 10px;
+    @include mq(iphone67) {
+      font-size: 20px;
+    }
+    @include mq(galaxys5land) {
+      font-size: 17px;
+    }
   }
   &__container {
     display: flex;
     flex-wrap: wrap;
     width: 70%;
+    @include mq(galaxys5land) {
+      width: 95%;
+    }
   }
   &__benefit {
     flex-basis: 33%;
@@ -31,6 +50,9 @@
       @include mq(large) {
         font-size: 40px;
       }
+      @include mq(iphone67) {
+        font-size: 30px;
+      }
     }
     p {
       font-size: 25px;
@@ -40,6 +62,9 @@
       }
       @include mq(small) {
         font-size: 17px;
+      }
+      @include mq(iphone67) {
+        font-size: 15px;
       }
     }
   }

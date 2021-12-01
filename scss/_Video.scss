@@ -52,5 +52,15 @@
     @include mq(xlarge) {
       font-size: 35px;
     }
+    @include mq(small) {
+      font-size: 30px;
+      width: 450px;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+    @include mq(galaxys5land) {
+      font-size: 22px;
+      width: 400px;
+    }
   }
 }

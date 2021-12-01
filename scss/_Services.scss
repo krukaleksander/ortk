@@ -7,6 +7,9 @@
   align-items: center;
   position: relative;
   overflow: hidden;
+  @include mq(iphone67) {
+    height: 300px;
+  }
   &__circle {
     z-index: 2;
     cursor: pointer;
@@ -26,6 +29,11 @@
     @include mq(large) {
       width: 200px;
       height: 200px;
+    }
+    @include mq(iphone67) {
+      height: 150px;
+      width: 150px;
+      font-size: 20px;
     }
     &:hover {
       transform: scale(1.25);

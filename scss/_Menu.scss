@@ -8,6 +8,7 @@
   @include mq(medium) {
     justify-content: center;
   }
+
   .phone {
     flex-basis: 50%;
     padding-left: 50px;
@@ -15,6 +16,10 @@
     align-items: center;
     color: #202066;
     letter-spacing: 1px;
+    @include mq(iphone67) {
+      font-size: 14px;
+      padding-left: 10px;
+    }
     span {
       color: #0dacae;
       padding: 5px;
@@ -22,6 +27,11 @@
     &__email,
     &__working-hours {
       margin-left: 20px;
+    }
+    &__working-hours {
+      @include mq(iphone67) {
+        display: none;
+      }
     }
   }
 }
@@ -50,6 +60,9 @@
     color: #1e306e;
     padding: 20px 5px;
     transition: 0.3s;
+  }
+  @include mq(iphone67) {
+    top: 70px;
   }
   .close-mobile-menu {
     display: none;

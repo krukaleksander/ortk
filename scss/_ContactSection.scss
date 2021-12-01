@@ -3,6 +3,10 @@
   background: linear-gradient(90deg, #2c41a1, #272f84);
   color: whitesmoke;
   padding: 100px 0px;
+  @include mq(galaxys5land) {
+    min-height: 250px;
+    padding: 20px;
+  }
   &__wrapper {
     width: 90%;
     margin: 0 auto;
@@ -10,6 +14,9 @@
       letter-spacing: 2px;
       position: relative;
       padding-left: 4rem;
+      @include mq(galaxys5land) {
+        font-size: 15px;
+      }
       &::before {
         content: "";
         position: absolute;
@@ -33,6 +40,14 @@
       @include mq(large) {
         font-size: 25px;
       }
+      @include mq(iphone67) {
+        font-size: 20px;
+      }
+      @include mq(galaxys5land) {
+        font-size: 17px;
+        letter-spacing: 2px;
+        padding: 10px 0;
+      }
     }
 
     button {
@@ -45,6 +60,10 @@
       padding: 15px 50px;
       cursor: pointer;
       position: relative;
+      @include mq(galaxys5land) {
+        font-size: 15px;
+        padding: 10px 30px;
+      }
       span {
         display: block;
         position: absolute;

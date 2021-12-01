@@ -3,6 +3,9 @@
   padding-bottom: 120px;
   width: 80%;
   margin: 0 auto;
+  @include mq(galaxys5land) {
+    padding: 10px;
+  }
   h6 {
     font-size: 24px;
     color: #0c0c26;
@@ -32,12 +35,20 @@
     justify-content: center;
     align-items: center;
     min-height: 300px;
+    @include mq(galaxys5land) {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
   }
   &__card {
     padding: 20px 20px 20px 0;
     align-self: flex-start;
     flex-basis: 33%;
     position: relative;
+    @include mq(galaxys5land) {
+      flex-basis: 50%;
+    }
+
     &--under {
       align-self: center;
     }

@@ -37,13 +37,22 @@
       .title {
         font-size: 50px;
         font-weight: 400;
+        @include mq(iphone67) {
+          font-size: 30px;
+        }
       }
       h1 {
         font-size: 40px;
         font-weight: 100;
+        @include mq(iphone67) {
+          font-size: 25px;
+        }
       }
       h2 {
         font-weight: 30px;
+        @include mq(iphone67) {
+          font-size: 20px;
+        }
       }
     }
   }
@@ -51,6 +60,9 @@
     padding: 120px 80px;
     display: flex;
     flex-direction: column;
+    @include mq(iphone67) {
+      padding: 10px;
+    }
     &__motto {
       position: relative;
       &::after {
@@ -69,11 +81,18 @@
     &__step {
       padding: 10px;
       margin-top: 90px;
+      @include mq(iphone67) {
+        margin-top: 10px;
+      }
       &--two,
       &--four {
         margin-left: 300px;
         @include mq(large) {
           margin-left: 150px;
+        }
+        @include mq(small) {
+          margin-left: 40px;
+          margin-top: 0px;
         }
       }
       .step__body {
@@ -101,6 +120,11 @@
           color: white;
           font-weight: 300;
           font-size: 40px;
+          @include mq(iphone67) {
+            width: 70px;
+            height: 70px;
+            font-size: 30px;
+          }
         }
         p {
           font-weight: bolder;
@@ -109,6 +133,9 @@
           line-height: 150%;
           font-weight: 400;
           font-size: 25px;
+          @include mq(iphone67) {
+            font-size: 20px;
+          }
         }
       }
     }
@@ -117,6 +144,9 @@
       font-size: 50px;
       font-weight: 100;
       margin: 30px;
+      @include mq(iphone67) {
+        margin: 10px;
+      }
       &--left {
         text-align: right;
       }
